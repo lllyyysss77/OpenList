@@ -1,0 +1,340 @@
+# Instincts generated from https://github.com/lllyyysss77/OpenList
+# Generated: 2026-05-12T20:32:28.916Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: OpenList-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/OpenList
+---
+
+# OpenList Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: fix, feat
+
+## Evidence
+
+- 2 commits analyzed
+- Detected conventional commit pattern
+- Examples: fix(driver): fix 189 & 189pc fastcopy form local storage (#2471), feat(189pc): implement AccessToken login (#2245)
+
+---
+id: OpenList-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/OpenList
+---
+
+# OpenList Commit Length
+
+## Action
+
+Write moderate-length commit messages (~56 characters)
+
+## Evidence
+
+- Average commit message length: 56 chars
+- Based on 2 commits
+
+---
+id: OpenList-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/OpenList
+---
+
+# OpenList Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: OpenList-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/OpenList
+---
+
+# OpenList Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: OpenList-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/OpenList
+---
+
+# OpenList Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: OpenList-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/lllyyysss77/OpenList
+---
+
+# OpenList Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: openlist-instinct-file-naming
+trigger: "When creating a new Go source file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct File Naming
+
+## Action
+
+Name the file using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.files: camelCase
+
+---
+id: openlist-instinct-function-naming
+trigger: "When defining a new function in Go"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Function Naming
+
+## Action
+
+Name the function using camelCase convention
+
+## Evidence
+
+- Pattern in namingConventions.functions: camelCase
+
+---
+id: openlist-instinct-class-naming
+trigger: "When defining a new class or struct in Go"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Class Naming
+
+## Action
+
+Name the class/struct using PascalCase convention
+
+## Evidence
+
+- Pattern in namingConventions.classes: PascalCase
+
+---
+id: openlist-instinct-constant-naming
+trigger: "When declaring a constant in Go"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE convention
+
+## Evidence
+
+- Pattern in namingConventions.constants: SCREAMING_SNAKE_CASE
+
+---
+id: openlist-instinct-import-style
+trigger: "When importing modules in Go files"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle: relative
+
+---
+id: openlist-instinct-export-style
+trigger: "When exporting symbols from a Go file"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle: named
+
+---
+id: openlist-instinct-commit-prefix
+trigger: "When writing a git commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Commit Prefix
+
+## Action
+
+Start the message with a conventional prefix such as 'fix' or 'feat'
+
+## Evidence
+
+- Seen in commit: fix(driver): fix 189 & 189pc fastcopy form local storage (#2471)
+- Seen in commit: feat(189pc): implement AccessToken login (#2245)
+- Pattern in commits.prefixes: ['fix', 'feat']
+
+---
+id: openlist-instinct-commit-format
+trigger: "When writing a git commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Commit Format
+
+## Action
+
+Use the format <type>(<scope>): <message> (#<issue>)
+
+## Evidence
+
+- Seen in commit: fix(driver): fix 189 & 189pc fastcopy form local storage (#2471)
+- Seen in commit: feat(189pc): implement AccessToken login (#2245)
+- Pattern in commits.type: conventional
+
+---
+id: openlist-instinct-commit-length
+trigger: "When composing a commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Commit Length
+
+## Action
+
+Keep the commit message around 56 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength: 56
+
+---
+id: openlist-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Test Location
+
+## Action
+
+Place test files in a separate directory from source files
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: openlist-instinct-drivers-folder
+trigger: "When adding new driver-related code"
+confidence: 0.8
+domain: architecture
+source: repo-analysis
+source_repo: lllyyysss77/OpenList
+---
+
+# Openlist Instinct Drivers Folder
+
+## Action
+
+Place the code inside the 'drivers' folder
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders: ['drivers']
+
